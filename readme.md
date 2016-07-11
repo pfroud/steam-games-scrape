@@ -1,0 +1,1 @@
+A tiny utility to scrape info about Steam games.
