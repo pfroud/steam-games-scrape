@@ -16,9 +16,9 @@ var pubName = bs[3].nextSibling.nextSibling.innerHTML;
 var gameInfo = {
     name: $$("div.apphub_AppName")[0].innerHTML,
     steamLink: window.location.href.split("?")[0],
-    gameWebsite: detailsBlocks[4].getElementsByTagName("a")[0].href,
-    devName: devName,
-    pubName: (pubName == devName) ? "" : pubName
+    website: detailsBlocks[4].getElementsByTagName("a")[0].href,
+    developer: devName,
+    publisher: (pubName == devName) ? "" : pubName
 };
 
 
