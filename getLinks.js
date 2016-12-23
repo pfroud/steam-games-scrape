@@ -46,8 +46,9 @@ function main() {
  * @param {StorageEvent} event - A StorageEvent containing info about a game.
  */
 function storageCallback(event) {
+    // For some incredibly stupid reason, using $() here doesn't work. You need $$()[0]. Fuck me right
     //noinspection JSUnresolvedVariable (Webstorm doesn't know about StorageEvent.key)
-    var paragraph = $("p#" + event.key);
+    var paragraph = $$("p#" + event.key)[0];
     paragraph.getElementsByTagName("span")[0].style.visibility = "visible"; //turn on the green checkmark
 
     // Style the link
