@@ -13,7 +13,7 @@ function main() {
     rows.forEach(function (row) {
         games.push({
             name: row.querySelector("span.title").innerHTML,
-            link: row.href,
+            link: row.href.split("?")[0],
             id: row.href.split("/")[4] //this is the game's Steam ID
         });
     });
