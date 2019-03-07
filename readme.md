@@ -2,9 +2,9 @@
 
 A little utility to scrape info about Steam games. (It's not fully automated.)
 
-I'm not a gamer. I made this to investigate starting a VR arcade, which never took off.
+I made this to investigate starting a VR arcade, which never took off.
 
-You get:
+The output of this tool is:
 
 * Name
 * Steam link
